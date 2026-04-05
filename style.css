@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    overflow-x: hidden;
+   
+}
+
+.main {
+    background-image: url("assets/images/bg.jpg");
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 90vh;
+    position: inherit;
+}
+
+.main .box {
+    height: 90vh;
+    width: 100%;
+    opacity: 0.69;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+nav {
+    padding: 8px;
+    max-width: 98vw;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    height: 62px;
+}
+
+nav img {
+    color: red;
+    width: 144px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+
+    height: calc(100% - 78px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 23px;
+    padding: 0 23px;
+}
+
+.hero> :first-child {
+    font-weight: bolder;
+    font-size: 40px;
+    font-family: "poppins";
+}
+
+.hero> :nth-child(2) {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.separation {
+    height: 4px;
+    background-color: rgb(71, 68, 68);
+}
+
+.btn {
+    font-family: "Poppins", sans-serif;
+    padding: 3px 8px;
+    font-weight: 400;
+    background-color: rgb(26, 26, 26);
+    color: white;
+    border-radius: 4px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.btn-red {
+    background-color: red;
+    font-weight: 400;
+    padding: 3px 24px;
+    color: white;
+    font-size: 18px;
+    border-radius: 4px;
+}
+
+.main input {
+    padding: 9px 34px;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: rgba(23, 23, 23, 0.2);
+    border: 1px solid rgba(240, 236, 236, 0.5);
+    color: white;
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.first {
+    display: flex;
+    height: auto;
+    align-items: center;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    margin-bottom: -120px;
+}
+@media  screen and (max-width: 1000px) {
+   .first{
+    flex-wrap: wrap;
+   }
+    }
+
+h2 {
+    color: white;
+    font-family: unset;
+    font-size: 53px;
+    font-weight: 700;
+    padding: 33px;
+    margin: 10px;
+}
+.sec{
+    padding: 15px;
+    margin: 15px;
+    border-radius:30px;
+}
+.one {
+    display: flex;
+    gap:23px;
+    position: relative;
+    left: -19px;
+    font-size: 125px;
+    font-weight: bold;
+    color: rgb(16, 0, 0);
+    margin-top: 0px;
+    -webkit-text-stroke: 5px rgba(245, 241, 241, 0.8);
+    bottom: 390px;
+
+}
+
+
+.img {
+    padding: 1px;
+    margin-left: 10px;
+    border-radius: 20px;
+    height: 355px;
+    cursor: pointer;
+    animation: slideInUp 0.6s ease forwards
+}
+.img:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+.final span{
+    color: white;
+    font-size: 45px;
+}
+.boxes{
+    padding: 40px;
+    margin: 3px 30px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    
+}
+.boxes .box{
+    border-radius: 9px;
+    color: white;
+    background: rgb(37, 36, 36);
+    
+    border: 1.5px solid rgb(37, 35, 35);
+    position: relative;
+    padding: 2px;
+    width: 300px;
+}
+.boxes h3{
+    padding: 10px;
+    font-size: 25px;
+}
+.fun{
+    padding: 10px;
+    margin-bottom: 90px;
+}
+.fun svg{
+    position: absolute;
+    bottom: 0.1px;
+    right: 4px;
+    width: 70px;
+    height: 80px;
+    
+}
+
+.faq .box:hover{
+    
+    background-color: rgb(91, 90, 90);
+    
+}
+.faq .box svg{  
+     filter:invert(1)
+}
+ .faq .box{
+    
+    transition: all 2s ease-out ;
+    display: flex;
+    justify-content: space-between;
+    
+    flex-direction: row;
+    background-color: rgb(43, 42, 42);
+    padding: 24px;
+    max-width: 600vw;
+    color: white;
+    margin: 40px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.faq h2{
+    color: white;
+    font-family: unset;
+    font-size: 53px;
+    font-weight: 700;
+    padding: 23px;
+    margin: 0px;
+}
+footer{
+    color: white;
+     margin: auto;
+    padding: 14px;
+    max-width: 60vw;
+}
+.footer a{
+    color: white;
+    font-size: 14px;
+
+}
+.question{
+    padding: 34px 0;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    gap: 29px;
+}
+@media  screen and (max-width: 1000px) {
+    .footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    }
+}
+.footer_item{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+.Ready{
+    color:white;
+    justify-items: center;
+}
+.red{
+    color: white;
+    margin: 30px;
+    font-size: 20px;
+}
+.but{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 500px;
+}
+.nut{
+    padding: 6px 14px;
+}
+input{
+   background: gray;
+}
+.ema{
+    display: flex;
+    flex-direction: column;
+
+}
+span{
+    color: rgb(120, 117, 117);
+}
+.language{
+    background-color: black;
+    padding-bottom: 25px;
+    
+}
+select{
+    border-color : gray ;
+    border-radius: 15px;
+    color: white;
+    padding: 8px 25px;
+    background-color: rgb(2, 2, 2);
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    margin-left: 200px;
+
+}
+option{
+    color: white;
+}
+.got{
+    color: whitesmoke;
+    padding-bottom: 70px;
+     margin-left: 200px;
+
+}
